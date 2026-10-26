@@ -8,9 +8,10 @@
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.getElementById('site-nav');
   if (toggle && nav) {
+    const label = toggle.querySelector('.nav-toggle__label');
     const setOpen = (open) => {
       toggle.setAttribute('aria-expanded', String(open));
-      toggle.querySelector('.nav-toggle__label').textContent = open ? 'Close' : 'Menu';
+      if (label) label.textContent = open ? 'Close' : 'Menu';
       nav.classList.toggle('is-open', open);
     };
     toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
@@ -21,6 +22,11 @@
       }
     });
     nav.addEventListener('click', (e) => { if (e.target.closest('a')) setOpen(false); });
+    document.addEventListener('click', (e) => {
+      if (nav.classList.contains('is-open') && !nav.contains(e.target) && !toggle.contains(e.target)) {
+        setOpen(false);
+      }
+    });
   }
 
   /* Header border on scroll */
@@ -59,14 +65,15 @@
       filters.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
       let count = 0;
       items.forEach((item) => {
-        const show = value === 'all' || item.dataset.category.split(' ').includes(value);
+        const categories = (item.dataset.category || '').trim().split(/\s+/);
+        const show = value === 'all' || categories.includes(value);
         item.hidden = !show;
         if (show) {
           count += 1;
           item.classList.add('is-visible');
         }
       });
-      if (live) live.textContent = `Showing ${count} ${count === 1 ? 'project' : 'projects'}`;
+      if (live) live.textContent = `Showing ${count} ${count === 1 ? 'project' : 'projects'}.`;
     });
   });
 
@@ -83,8 +90,10 @@
         if (entry.isIntersecting) {
           tocLinks.forEach((a) => { a.classList.remove('is-active'); a.removeAttribute('aria-current'); });
           const link = map.get(entry.target);
-          link.classList.add('is-active');
-          link.setAttribute('aria-current', 'true');
+          if (link) {
+            link.classList.add('is-active');
+            link.setAttribute('aria-current', 'location');
+          }
         }
       });
     }, { rootMargin: '-20% 0px -70% 0px' });

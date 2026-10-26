@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project Title — Case Study — Your Name</title>
-  <meta name="description" content="Case study template: overview, challenge, context, research, design process, solution, outcomes and reflection.">
+  <title>Case Study Template | Your Name</title>
+  <meta name="description" content="A reusable case-study structure for product design context, research, decisions, outcomes, and reflection.">
   <meta name="color-scheme" content="light dark">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Project Title — Case Study — Your Name">
-  <meta property="og:description" content="Case study template: overview, challenge, context, research, design process, solution, outcomes and reflection.">
+  <meta property="og:title" content="Case Study Template | Your Name">
+  <meta property="og:description" content="A reusable case-study structure for product design context, research, decisions, outcomes, and reflection.">
   <meta property="og:image" content="assets/img/og-image.svg">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -19,78 +19,101 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span>Your Name</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__label">Menu</span></button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__label">Menu</span>
+      </button>
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <ul>
           <li><a href="index.html">About</a></li>
-          <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+          <li><a href="portfolio.html" aria-current="location">Work</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
   <main id="main">
-    <article class="section">
+    <article class="section case-study">
       <div class="container">
-        <header>
-          <nav aria-label="Breadcrumb"><a href="portfolio.html">&larr; Portfolio</a></nav>
-          <span class="eyebrow">Case study</span>
-          <h1>Project title</h1>
-          <p class="lead">One-sentence project summary placeholder.</p>
+        <header class="cs-header">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="portfolio.html">All work</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">Case study template</span>
+          </nav>
+          <span class="eyebrow">Reusable case-study structure</span>
+          <h1>[Project title]</h1>
+          <p class="lead">[Write one verified sentence describing the problem, your contribution, and why the work mattered.]</p>
           <dl class="cs-meta">
-            <div><dt>Role</dt><dd>Product Designer</dd></div>
-            <div><dt>Timeline</dt><dd>00 weeks</dd></div>
-            <div><dt>Team</dt><dd>Team placeholder</dd></div>
-            <div><dt>Tools</dt><dd>Figma, Miro</dd></div>
+            <div><dt>Role</dt><dd>[Your contribution]</dd></div>
+            <div><dt>Team</dt><dd>[Collaborators]</dd></div>
+            <div><dt>Timeline</dt><dd>[Verified dates]</dd></div>
+            <div><dt>Focus</dt><dd>[Methods or discipline]</dd></div>
           </dl>
-          <figure class="cs-figure"><img src="assets/img/placeholder-hero.svg" width="1600" height="900" alt="Placeholder hero image for the project"></figure>
+          <figure class="cs-figure cs-hero">
+            <img src="assets/img/placeholder-hero.svg" width="1600" height="900" alt="" fetchpriority="high">
+            <figcaption>[Replace with an approved project visual and a concise, informative caption.]</figcaption>
+          </figure>
         </header>
+
         <div class="cs-layout">
-          <nav class="cs-toc" aria-label="On this page"><ol><li><a href="#overview">Overview</a></li><li><a href="#challenge">Challenge</a></li><li><a href="#context">Context</a></li><li><a href="#research">Research</a></li><li><a href="#process">Design process</a></li><li><a href="#solution">Solution</a></li><li><a href="#outcomes">Outcomes</a></li><li><a href="#reflection">Reflection</a></li></ol></nav>
-          <div>
-          <section class="cs-section" id="overview" aria-labelledby="overview-title" data-reveal>
-            <h2 id="overview-title">Overview</h2>
-            <p>Placeholder content for overview.</p>
-            
-          </section>
-          <section class="cs-section" id="challenge" aria-labelledby="challenge-title" data-reveal>
-            <h2 id="challenge-title">Challenge</h2>
-            <p>Placeholder content for challenge.</p>
-            
-          </section>
-          <section class="cs-section" id="context" aria-labelledby="context-title" data-reveal>
-            <h2 id="context-title">Context</h2>
-            <p>Placeholder content for context.</p>
-            
-          </section>
-          <section class="cs-section" id="research" aria-labelledby="research-title" data-reveal>
-            <h2 id="research-title">Research</h2>
-            <p>Placeholder content for research.</p>
-            <figure class="cs-figure"><img src="assets/img/placeholder-2.svg" width="800" height="500" alt="Placeholder research artefact" loading="lazy"><figcaption>Figure caption placeholder.</figcaption></figure>
-          </section>
-          <section class="cs-section" id="process" aria-labelledby="process-title" data-reveal>
-            <h2 id="process-title">Design process</h2>
-            <p>Placeholder content for design process.</p>
-            <ol class="steps"><li><div><h3>Discover</h3><p>Placeholder.</p></div></li><li><div><h3>Define</h3><p>Placeholder.</p></div></li><li><div><h3>Design</h3><p>Placeholder.</p></div></li><li><div><h3>Deliver</h3><p>Placeholder.</p></div></li></ol>
-          </section>
-          <section class="cs-section" id="solution" aria-labelledby="solution-title" data-reveal>
-            <h2 id="solution-title">Solution</h2>
-            <p>Placeholder content for solution.</p>
-            <figure class="cs-figure"><img src="assets/img/placeholder-1.svg" width="800" height="500" alt="Placeholder solution screens" loading="lazy"><figcaption>Figure caption placeholder.</figcaption></figure>
-          </section>
-          <section class="cs-section" id="outcomes" aria-labelledby="outcomes-title" data-reveal>
-            <h2 id="outcomes-title">Outcomes</h2>
-            <p>Placeholder content for outcomes.</p>
-            <div class="stats"><div class="stat"><span class="stat__value">+00%</span><span class="stat__label">Metric label</span></div><div class="stat"><span class="stat__value">−00%</span><span class="stat__label">Metric label</span></div><div class="stat"><span class="stat__value">0.0×</span><span class="stat__label">Metric label</span></div></div>
-          </section>
-          <section class="cs-section" id="reflection" aria-labelledby="reflection-title" data-reveal>
-            <h2 id="reflection-title">Reflection</h2>
-            <p>Placeholder content for reflection.</p>
-            
-          </section>
+          <nav class="cs-toc" aria-label="On this page">
+            <ol>
+              <li><a href="#overview">Overview</a></li>
+              <li><a href="#challenge">Challenge</a></li>
+              <li><a href="#discovery">Discovery</a></li>
+              <li><a href="#direction">Direction</a></li>
+              <li><a href="#design">Design &amp; delivery</a></li>
+              <li><a href="#outcomes">Outcomes</a></li>
+              <li><a href="#reflection">Reflection</a></li>
+            </ol>
+          </nav>
+          <div class="cs-content">
+            <section class="cs-section" id="overview" aria-labelledby="overview-title" data-reveal>
+              <span class="eyebrow">01 / Overview</span>
+              <h2 id="overview-title">The opportunity</h2>
+              <p>[Describe the audience, product context, your scope of responsibility, and the constraints that shaped the work.]</p>
+            </section>
+            <section class="cs-section" id="challenge" aria-labelledby="challenge-title" data-reveal>
+              <span class="eyebrow">02 / Challenge</span>
+              <h2 id="challenge-title">What needed to change?</h2>
+              <p>[Frame the user problem and the product or organizational need. Be specific without exposing confidential information.]</p>
+            </section>
+            <section class="cs-section" id="discovery" aria-labelledby="discovery-title" data-reveal>
+              <span class="eyebrow">03 / Discovery</span>
+              <h2 id="discovery-title">What we learned</h2>
+              <p>[Describe verified research methods, evidence, and the insight that changed your understanding of the problem.]</p>
+              <figure class="cs-figure">
+                <img src="assets/img/placeholder-2.svg" width="800" height="500" alt="" loading="lazy">
+                <figcaption>[Add an approved research artifact and explain what it helped the team see.]</figcaption>
+              </figure>
+            </section>
+            <section class="cs-section" id="direction" aria-labelledby="direction-title" data-reveal>
+              <span class="eyebrow">04 / Direction</span>
+              <h2 id="direction-title">The system behind the experience</h2>
+              <p>[Explain the product strategy, service/system relationships, and the decisions or trade-offs that shaped the direction.]</p>
+            </section>
+            <section class="cs-section" id="design" aria-labelledby="design-title" data-reveal>
+              <span class="eyebrow">05 / Design &amp; delivery</span>
+              <h2 id="design-title">From interaction to implementation</h2>
+              <p>[Show the important flows, prototypes, design-system contributions, collaboration, and iteration. Explain why the final interaction works.]</p>
+              <figure class="cs-figure">
+                <img src="assets/img/placeholder-1.svg" width="800" height="500" alt="" loading="lazy">
+                <figcaption>[Add an approved design visual and describe the relevant interaction or system detail.]</figcaption>
+              </figure>
+            </section>
+            <section class="cs-section" id="outcomes" aria-labelledby="outcomes-title" data-reveal>
+              <span class="eyebrow">06 / Outcomes</span>
+              <h2 id="outcomes-title">What changed</h2>
+              <p>[Add verified qualitative or quantitative results and explain how they were measured. Remove this section's claims if evidence cannot be shared.]</p>
+            </section>
+            <section class="cs-section" id="reflection" aria-labelledby="reflection-title" data-reveal>
+              <span class="eyebrow">07 / Reflection</span>
+              <h2 id="reflection-title">What I would carry forward</h2>
+              <p>[Share a grounded reflection, remaining question, or next opportunity.]</p>
+            </section>
             <nav class="pager" aria-label="Case study navigation">
-              <a class="btn btn--ghost" href="portfolio.html">All projects</a>
-              <a class="btn" href="case-study.html">Next project &rarr;</a>
+              <a class="btn btn--ghost" href="portfolio.html">Back to all work</a>
             </nav>
           </div>
         </div>
@@ -100,10 +123,9 @@
 
   <footer class="site-footer">
     <div class="container site-footer__inner">
-      <p>&copy; <span data-year>2026</span> Your Name. Designed &amp; built with plain HTML, CSS and JS.</p>
+      <p>&copy; <span data-year>2026</span> Your Name. Designed and built with HTML, CSS, and vanilla JavaScript.</p>
       <ul>
-        <li><a href="mailto:hello@example.com">Email</a></li>
-        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
         <li><a href="#main">Back to top</a></li>
       </ul>
     </div>

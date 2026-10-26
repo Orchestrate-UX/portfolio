@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name — UX &amp; Product Designer</title>
-  <meta name="description" content="Portfolio and CV of a UX and Product Designer orchestrating human and AI-driven experiences.">
+  <title>Your Name | Senior UX &amp; Product Designer</title>
+  <meta name="description" content="A portfolio focused on AI-driven product design, UX orchestration, interaction design, and design systems.">
   <meta name="color-scheme" content="light dark">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Your Name — UX &amp; Product Designer">
-  <meta property="og:description" content="Portfolio and CV of a UX and Product Designer orchestrating human and AI-driven experiences.">
+  <meta property="og:title" content="Your Name | Senior UX &amp; Product Designer">
+  <meta property="og:description" content="AI-driven product design, UX orchestration, interaction design, and systems thinking.">
   <meta property="og:image" content="assets/img/og-image.svg">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -19,87 +19,156 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span>Your Name</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__label">Menu</span></button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__label">Menu</span>
+      </button>
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <ul>
           <li><a href="index.html" aria-current="page">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="portfolio.html">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero__grid">
-        <div>
-          <p class="status" data-reveal>Available for new projects</p>
-          <h1 id="hero-title" data-reveal style="--delay:80ms">Orchestrating <span class="gradient-text">intelligent</span> product experiences.</h1>
-          <p class="lead" data-reveal style="--delay:160ms">UX / Product Designer shaping AI-driven products with clarity, craft and systems thinking. Short placeholder introduction.</p>
-          <div class="btn-row" data-reveal style="--delay:240ms">
-            <a class="btn" href="portfolio.html">View portfolio</a>
+        <div class="hero__content">
+          <p class="eyebrow">Senior UX / Product Designer</p>
+          <h1 id="hero-title">Designing where people, AI, and complex systems meet.</h1>
+          <p class="lead">I focus on making intelligent products feel useful, understandable, and human—through clear strategy, thoughtful interactions, and systems that scale.</p>
+          <div class="btn-row">
+            <a class="btn" href="#selected-work">Explore selected work <span aria-hidden="true">↓</span></a>
             <a class="btn btn--ghost" href="#contact">Get in touch</a>
           </div>
+          <ul class="hero__disciplines" aria-label="Areas of focus">
+            <li>AI product design</li>
+            <li>UX orchestration</li>
+            <li>Design systems</li>
+          </ul>
         </div>
-        <figure class="hero__portrait" data-reveal style="--delay:200ms">
-          <img src="assets/img/portrait.svg" width="600" height="750" alt="Placeholder portrait of the designer">
+        <figure class="hero__portrait">
+          <img src="assets/img/portrait.svg" width="600" height="750" alt="Abstract placeholder artwork; replace with a portrait or signature project visual.">
+          <figcaption>Replace with a personal portrait or a signature visual.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="section" id="about" aria-labelledby="about-title">
+    <section class="section section--work" id="selected-work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <span class="eyebrow">Selected work</span>
+            <h2 id="work-title">Making complexity feel clear.</h2>
+          </div>
+          <a class="text-link" href="portfolio.html">View all work <span aria-hidden="true">↗</span></a>
+        </div>
+        <ul class="grid grid--3 project-grid">
+          <li data-reveal>
+            <article class="card">
+              <div class="card__media">
+                <img src="assets/img/placeholder-1.svg" width="800" height="500" alt="" loading="lazy">
+              </div>
+              <div class="card__body">
+                <p class="card__meta">AI &amp; orchestration</p>
+                <h3 class="card__title"><a class="card__link" href="case-study-ai-orchestration.html">Project 01</a></h3>
+                <p>[Add a verified project summary: user need, contribution, and outcome.]</p>
+                <span class="card__prompt">Editable content slot</span>
+              </div>
+            </article>
+          </li>
+          <li data-reveal style="--delay:80ms">
+            <article class="card">
+              <div class="card__media">
+                <img src="assets/img/placeholder-2.svg" width="800" height="500" alt="" loading="lazy">
+              </div>
+              <div class="card__body">
+                <p class="card__meta">Research &amp; interaction</p>
+                <h3 class="card__title"><a class="card__link" href="case-study-research.html">Project 02</a></h3>
+                <p>[Add a verified project summary: user need, contribution, and outcome.]</p>
+                <span class="card__prompt">Editable content slot</span>
+              </div>
+            </article>
+          </li>
+          <li data-reveal style="--delay:160ms">
+            <article class="card">
+              <div class="card__media">
+                <img src="assets/img/placeholder-3.svg" width="800" height="500" alt="" loading="lazy">
+              </div>
+              <div class="card__body">
+                <p class="card__meta">Systems &amp; design systems</p>
+                <h3 class="card__title"><a class="card__link" href="case-study-design-systems.html">Project 03</a></h3>
+                <p>[Add a verified project summary: user need, contribution, and outcome.]</p>
+                <span class="card__prompt">Editable content slot</span>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="approach" aria-labelledby="approach-title">
       <div class="container split">
-        <div class="split__head"><span class="eyebrow">About</span><h2 id="about-title">Designing for people and intelligent systems</h2></div>
+        <div class="split__head">
+          <span class="eyebrow">Approach</span>
+          <h2 id="approach-title">Designing the whole experience, not just the screen.</h2>
+        </div>
         <div class="stack" data-reveal>
-          <p class="lead">Placeholder summary of experience, approach and values.</p>
-          <p>Replace this paragraph with a short biography.</p>
+          <p class="lead">The most useful product experiences connect people, technology, and the systems around them.</p>
+          <p>[Add a short, personal point of view on how you frame problems, work with teams, and turn complexity into useful experiences.]</p>
+          <a class="text-link" href="portfolio.html">See the work behind the approach <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="experience" aria-labelledby="exp-title">
+    <section class="section section--soft" id="capabilities" aria-labelledby="capabilities-title">
       <div class="container split">
-        <div class="split__head"><span class="eyebrow">Experience</span><h2 id="exp-title">Resume</h2></div>
-        <ol class="timeline">
-          <li class="timeline__item" data-reveal><p class="timeline__date">2022 – Present</p><h3>Senior Product Designer</h3><p>Company name. One-line impact summary.</p></li>
-          <li class="timeline__item" data-reveal><p class="timeline__date">2018 – 2022</p><h3>UX Designer</h3><p>Company name. One-line impact summary.</p></li>
-          <li class="timeline__item" data-reveal><p class="timeline__date">2015 – 2018</p><h3>Junior Designer</h3><p>Company name. One-line impact summary.</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section" id="skills" aria-labelledby="skills-title">
-      <div class="container split">
-        <div class="split__head"><span class="eyebrow">Capabilities</span><h2 id="skills-title">Skills &amp; education</h2></div>
+        <div class="split__head">
+          <span class="eyebrow">Capabilities</span>
+          <h2 id="capabilities-title">From product strategy to interaction detail.</h2>
+        </div>
         <dl class="skill-list" data-reveal>
-          <div><dt>Design</dt><dd>UX strategy, interaction design, design systems, prototyping</dd></div>
-          <div><dt>Research</dt><dd>Interviews, usability testing, synthesis, analytics</dd></div>
-          <div><dt>AI &amp; orchestration</dt><dd>Conversational UX, human-in-the-loop flows, service blueprints</dd></div>
-          <div><dt>Education</dt><dd>Degree, Institution, Year</dd></div>
+          <div><dt>AI product experiences</dt><dd>Human–AI collaboration, orchestration, trust, and clear system feedback</dd></div>
+          <div><dt>Product strategy</dt><dd>Opportunity framing, service thinking, and aligning user and business needs</dd></div>
+          <div><dt>Interaction design</dt><dd>End-to-end flows, prototyping, usability, and accessible interface patterns</dd></div>
+          <div><dt>Design systems</dt><dd>Reusable foundations, component behavior, governance, and scale</dd></div>
         </dl>
       </div>
     </section>
 
-    <section class="section" id="contact" aria-labelledby="contact-title">
+    <section class="section" id="experience" aria-labelledby="experience-title">
       <div class="container split">
-        <div class="split__head"><span class="eyebrow">Contact</span><h2 id="contact-title">Let’s work together</h2></div>
-        <div class="stack" data-reveal>
-          <p class="lead">Have a project in mind? I’d love to hear about it.</p>
-          <div class="btn-row">
-            <a class="btn" href="mailto:hello@example.com">hello@example.com</a>
-            <a class="btn btn--ghost" href="https://www.linkedin.com/">LinkedIn</a>
-          </div>
+        <div class="split__head">
+          <span class="eyebrow">Experience</span>
+          <h2 id="experience-title">A practice built through collaboration.</h2>
         </div>
+        <div class="experience-slot">
+          <p class="lead">Add a concise, verified career snapshot here.</p>
+          <p>[Role, organization, dates, and a one-line contribution. Add additional roles only when ready to publish.]</p>
+          <a class="text-link" href="#contact">Discuss my experience <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-panel">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2 id="contact-title">Have a thoughtful challenge to solve?</h2>
+          <p class="lead">I’m open to conversations about products, teams, and systems that make a meaningful difference.</p>
+        </div>
+        <a class="btn" href="mailto:hello@example.com">Replace with your contact email <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container site-footer__inner">
-      <p>&copy; <span data-year>2026</span> Your Name. Designed &amp; built with plain HTML, CSS and JS.</p>
+      <p>&copy; <span data-year>2026</span> Your Name. Designed and built with HTML, CSS, and vanilla JavaScript.</p>
       <ul>
-        <li><a href="mailto:hello@example.com">Email</a></li>
-        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li><a href="#main">Back to top</a></li>
       </ul>
     </div>

@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio — Your Name</title>
-  <meta name="description" content="Selected UX and product design case studies.">
+  <title>Selected Work | Your Name</title>
+  <meta name="description" content="Selected work in AI-driven product design, UX research, interaction design, and design systems.">
   <meta name="color-scheme" content="light dark">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Portfolio — Your Name">
-  <meta property="og:description" content="Selected UX and product design case studies.">
+  <meta property="og:title" content="Selected Work | Your Name">
+  <meta property="og:description" content="AI-driven product design, UX research, interaction design, and design systems.">
   <meta property="og:image" content="assets/img/og-image.svg">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -19,62 +19,82 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span>Your Name</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__label">Menu</span></button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__label">Menu</span>
+      </button>
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <ul>
           <li><a href="index.html">About</a></li>
-          <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+          <li><a href="portfolio.html" aria-current="page">Work</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
   <main id="main">
-    <section class="section" aria-labelledby="work-title">
+    <section class="section portfolio-section" aria-labelledby="work-title">
       <div class="container">
-        <div class="section__head">
-          <span class="eyebrow">Portfolio</span>
-          <h1 id="work-title">Selected work</h1>
-          <p class="lead">Placeholder intro to the projects below.</p>
-        </div>
+        <header class="section__head portfolio-intro">
+          <span class="eyebrow">Selected work</span>
+          <h1 id="work-title">Designing for people and intelligent systems.</h1>
+          <p class="lead">A selection of work across AI product experiences, research-led interaction design, and design systems. Replace each editable project slot with verified work and imagery.</p>
+        </header>
+
         <div class="filters" role="group" aria-label="Filter projects">
-          <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI</button>
-          <button class="filter" type="button" data-filter="research" aria-pressed="false">Research</button>
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">All work</button>
+          <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI &amp; orchestration</button>
+          <button class="filter" type="button" data-filter="research" aria-pressed="false">Research &amp; interaction</button>
           <button class="filter" type="button" data-filter="systems" aria-pressed="false">Systems</button>
         </div>
-        <p class="visually-hidden" id="filter-status" role="status" aria-live="polite"></p>
-        <ul class="grid grid--3">
-          <li data-category="ai product" data-reveal style="--delay:0ms">
+        <p class="visually-hidden" id="filter-status" role="status" aria-live="polite" aria-atomic="true">Showing all 3 projects.</p>
+
+        <ul class="grid grid--3 project-grid">
+          <li data-category="ai systems" data-reveal>
             <article class="card">
-              <div class="card__media"><img src="assets/img/placeholder-1.svg" width="800" height="500" alt="" loading="lazy"></div>
+              <div class="card__media">
+                <img src="assets/img/placeholder-1.svg" width="800" height="500" alt="" loading="lazy">
+              </div>
               <div class="card__body">
-                <p class="card__meta">Product design · 2025</p>
-                <h2 class="card__title"><a class="card__link" href="case-study.html">Project One</a></h2>
-                <p>AI assistant orchestration. Short placeholder summary.</p>
-                <ul class="tags" aria-label="Tags"><li class="tag">Ai</li><li class="tag">Case study</li></ul>
+                <p class="card__meta">AI product design · Project 01</p>
+                <h2 class="card__title"><a class="card__link" href="case-study-ai-orchestration.html">[Project title]</a></h2>
+                <p>[Describe the user need, your contribution, and a verified outcome.]</p>
+                <ul class="tags" aria-label="Project themes">
+                  <li class="tag">AI experiences</li>
+                  <li class="tag">Orchestration</li>
+                </ul>
               </div>
             </article>
           </li>
           <li data-category="research" data-reveal style="--delay:80ms">
             <article class="card">
-              <div class="card__media"><img src="assets/img/placeholder-2.svg" width="800" height="500" alt="" loading="lazy"></div>
+              <div class="card__media">
+                <img src="assets/img/placeholder-2.svg" width="800" height="500" alt="" loading="lazy">
+              </div>
               <div class="card__body">
-                <p class="card__meta">UX research · 2025</p>
-                <h2 class="card__title"><a class="card__link" href="case-study.html">Project Two</a></h2>
-                <p>Research-led redesign. Short placeholder summary.</p>
-                <ul class="tags" aria-label="Tags"><li class="tag">Research</li><li class="tag">Case study</li></ul>
+                <p class="card__meta">UX research · Project 02</p>
+                <h2 class="card__title"><a class="card__link" href="case-study-research.html">[Project title]</a></h2>
+                <p>[Describe the user need, your contribution, and a verified outcome.]</p>
+                <ul class="tags" aria-label="Project themes">
+                  <li class="tag">Research</li>
+                  <li class="tag">Interaction design</li>
+                </ul>
               </div>
             </article>
           </li>
           <li data-category="systems" data-reveal style="--delay:160ms">
             <article class="card">
-              <div class="card__media"><img src="assets/img/placeholder-3.svg" width="800" height="500" alt="" loading="lazy"></div>
+              <div class="card__media">
+                <img src="assets/img/placeholder-3.svg" width="800" height="500" alt="" loading="lazy">
+              </div>
               <div class="card__body">
-                <p class="card__meta">Design system · 2025</p>
-                <h2 class="card__title"><a class="card__link" href="case-study.html">Project Three</a></h2>
-                <p>Scalable component library. Short placeholder summary.</p>
-                <ul class="tags" aria-label="Tags"><li class="tag">Systems</li><li class="tag">Case study</li></ul>
+                <p class="card__meta">Design systems · Project 03</p>
+                <h2 class="card__title"><a class="card__link" href="case-study-design-systems.html">[Project title]</a></h2>
+                <p>[Describe the user need, your contribution, and a verified outcome.]</p>
+                <ul class="tags" aria-label="Project themes">
+                  <li class="tag">Systems thinking</li>
+                  <li class="tag">Design systems</li>
+                </ul>
               </div>
             </article>
           </li>
@@ -85,10 +105,9 @@
 
   <footer class="site-footer">
     <div class="container site-footer__inner">
-      <p>&copy; <span data-year>2026</span> Your Name. Designed &amp; built with plain HTML, CSS and JS.</p>
+      <p>&copy; <span data-year>2026</span> Your Name. Designed and built with HTML, CSS, and vanilla JavaScript.</p>
       <ul>
-        <li><a href="mailto:hello@example.com">Email</a></li>
-        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
         <li><a href="#main">Back to top</a></li>
       </ul>
     </div>
