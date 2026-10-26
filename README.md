@@ -1,4 +1,4 @@
-# Portfolio
+# Lex-Portfolio
 
 A static UX / Product Designer portfolio built with semantic HTML5, CSS3, and vanilla JavaScript. It has no dependencies or build step and can be deployed directly to GitHub Pages.
 
