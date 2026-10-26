@@ -132,20 +132,22 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 .brand { display: inline-flex; align-items: center; gap: 0.6rem; font-weight: 650; text-decoration: none; letter-spacing: -0.01em; }
 .brand__mark { width: 1.2rem; height: 1.2rem; border-radius: 50%; background: var(--accent); box-shadow: inset 0 0 0 3px var(--bg), 0 0 0 1px var(--accent); }
 .nav-toggle {
-  display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; gap: 0.5rem; padding: 0.5rem 0.9rem;
+  display: none; align-items: center; justify-content: center; min-height: 2.75rem; gap: 0.5rem; padding: 0.5rem 0.9rem;
   font: inherit; font-size: var(--step--1); color: var(--text); background: transparent;
   border: 1px solid var(--border); border-radius: 999px; cursor: pointer;
 }
-.site-nav { display: none; position: absolute; inset: 100% 0 auto; padding: var(--space-2) 1.25rem var(--space-3); background: var(--bg); border-bottom: 1px solid var(--border); }
-.site-nav.is-open { display: block; }
+.js .nav-toggle { display: inline-flex; }
+.site-nav { position: absolute; inset: 100% 0 auto; padding: var(--space-2) 1.25rem var(--space-3); background: var(--bg); border-bottom: 1px solid var(--border); }
+.js .site-nav:not(.is-open) { display: none; }
 .site-nav ul { display: grid; gap: 0.25rem; }
 .site-nav a { display: block; padding: 0.7rem 0; text-decoration: none; color: var(--text-muted); }
 .site-nav a:hover, .site-nav a[aria-current] { color: var(--text); }
 .site-nav a[aria-current] { font-weight: 600; }
 
 @media (min-width: 48rem) {
-  .nav-toggle { display: none; }
-  .site-nav { display: block; position: static; padding: 0; background: none; border: 0; }
+  .js .nav-toggle { display: none; }
+  .js .site-nav:not(.is-open) { display: block; }
+  .site-nav { position: static; padding: 0; background: none; border: 0; }
   .site-nav ul { display: flex; gap: var(--space-3); }
   .site-nav a { position: relative; padding: 0.5rem 0; font-size: var(--step--1); }
   .site-nav a::after {
@@ -189,6 +191,7 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 .card__title { margin: 0; font-size: var(--step-1); }
 .card__link { text-decoration: none; }
 .card__link::after { content: ""; position: absolute; inset: 0; } /* whole card clickable */
+.card:has(.card__link:focus-visible) { outline: 3px solid var(--focus); outline-offset: 3px; }
 .card { position: relative; }
 .card__meta { font: 500 0.78rem/1 var(--font-mono); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
 .card .tags { margin-top: auto; padding-top: var(--space-2); }

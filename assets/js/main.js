@@ -8,10 +8,8 @@
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.getElementById('site-nav');
   if (toggle && nav) {
-    const label = toggle.querySelector('.nav-toggle__label');
     const setOpen = (open) => {
       toggle.setAttribute('aria-expanded', String(open));
-      if (label) label.textContent = open ? 'Close' : 'Menu';
       nav.classList.toggle('is-open', open);
     };
     toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
