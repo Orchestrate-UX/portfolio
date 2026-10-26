@@ -265,10 +265,10 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 .cs-header h1 { max-width: 15ch; }
 .cs-header > .lead { max-width: 60ch; }
 .cs-layout { display: grid; gap: var(--space-3); margin-top: var(--space-5); }
-.cs-toc { font-size: var(--step--1); }
-.cs-toc ol { display: flex; gap: 0.35rem; overflow-x: auto; overscroll-behavior-inline: contain; padding: 0.5rem 0; scrollbar-width: thin; }
-.cs-toc li { flex: 0 0 auto; }
-.cs-toc a { display: block; padding: 0.55rem 0.75rem; border-bottom: 2px solid transparent; text-decoration: none; color: var(--text-muted); white-space: nowrap; transition: color 0.2s, border-color 0.2s; }
+.cs-toc { min-width: 0; font-size: var(--step--1); }
+.cs-toc ol { display: flex; flex-wrap: wrap; gap: 0.35rem; padding: 0.5rem 0; }
+.cs-toc li { min-width: 0; }
+.cs-toc a { display: block; padding: 0.55rem 0.75rem; border-bottom: 2px solid transparent; text-decoration: none; color: var(--text-muted); overflow-wrap: anywhere; transition: color 0.2s, border-color 0.2s; }
 .cs-toc a:hover, .cs-toc a.is-active { color: var(--text); border-bottom-color: var(--accent); }
 .cs-content { min-width: 0; }
 .cs-section { padding-block: var(--space-4); border-top: 1px solid var(--border); }
